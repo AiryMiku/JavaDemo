@@ -1,5 +1,6 @@
 package nowcoder;
 
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
@@ -11,7 +12,7 @@ import java.util.regex.Pattern;
 
 public class Main {
 
-    static int ans = 0;
+    public static int ans = 0;
     static int n = 6;
     static int[] x = new int[10];
     private static int pInt = 1;
@@ -65,6 +66,27 @@ public class Main {
 //        if(1=1){
 //          complier error
 //        }
+        Main main = new Main();
+        System.out.println(main.ans+"---");
+
+//        a = Integer.parseInt("1024");  返回int基本类型
+
+//        b = Integer.valueOf("1024").intValue();  valueOf返回new Integer,如果数字在常量池缓存（-128-127）从常量池取，否则new
+//        intValue返回integer对象的int值
+
+        int i=5;
+
+        int is=(i++)+(++i)+(i--)+(--i);
+
+        System.out.println(is);
+        int x = 20, y = 5;
+        System.out.println(x+y+""+(x+y)+y);
+        System.out.println(2.5/2.5);
+        try{
+            
+        }finally {
+
+        }
     }
 
     static void change(String str) {
@@ -77,7 +99,7 @@ public class Main {
                 return false;
         return true;
     }
-    static void queen(int k){
+    public static void queen(int k){
 
         if (k>4) {
             ans++;
@@ -89,6 +111,10 @@ public class Main {
                 }
             }
         }
+
+    }
+
+    static void sleep(){
 
     }
 

@@ -16,6 +16,13 @@ class item implements Comparable<item>{
     }
 }
 public class Main {
+    static int cnt = 6;
+    static{
+        cnt += 9;
+    }
+    static{
+        cnt /=3;
+    }
     public static void main(String[] args) {
         int a[] = {1,3,2};
         Arrays.sort(a);
@@ -39,6 +46,8 @@ public class Main {
         Integer i2=100;
 
         System.out.println(i1==i2);
+
+        System.out.println(cnt);
     }
 
     static public List<List<String>> groupAnagrams(String[] strs) {

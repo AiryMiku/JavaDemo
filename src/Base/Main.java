@@ -21,7 +21,7 @@ class A extends Thread{
     }
 }
 interface iC{
-
+    int a = 0;
 }
 
 interface iC1{

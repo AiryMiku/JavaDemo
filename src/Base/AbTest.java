@@ -5,6 +5,8 @@ package Base;
  */
 abstract class ABClass{
 
+    int a = 1;
+
     ABClass(){
         System.out.println("hello");
         //抽象方法可以有构造函数
@@ -17,5 +19,11 @@ abstract class ABClass{
 
 }
 
-public class AbTest {
+public class AbTest extends ABClass{
+
+    @Override
+    void doSome() {
+        super.doSome();
+        System.out.println(super.a);
+    }
 }
