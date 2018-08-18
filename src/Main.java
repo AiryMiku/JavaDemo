@@ -1,4 +1,5 @@
 import java.util.*;
+import java.util.concurrent.BlockingDeque;
 
 /**
  * Created by Airy on 2018/7/6
@@ -39,7 +40,7 @@ public class Main {
         rrr.toCharArray();
 
         String source[] = {"eat", "tea", "tan", "ate", "nat", "bat"};
-        groupAnagrams(source);
+        List<List<String>> lists = groupAnagrams(source);
         char aaaaaa ='1';
         Character aaa = aaaaaa;
         Integer i1=100;
@@ -48,8 +49,13 @@ public class Main {
         System.out.println(i1==i2);
 
         System.out.println(cnt);
+//        dow();
+
+
     }
 
+
+    public void dow(){}
     static public List<List<String>> groupAnagrams(String[] strs) {
         List<List<String>> ans = new ArrayList<>();
         Map<List<Character>,List<String>> vis = new HashMap<>();

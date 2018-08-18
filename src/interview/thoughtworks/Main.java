@@ -1,4 +1,4 @@
-package thoughtworks;
+package interview.thoughtworks;
 
 import java.util.ArrayList;
 import java.util.Scanner;
