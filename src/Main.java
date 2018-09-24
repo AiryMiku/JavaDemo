@@ -51,6 +51,8 @@ public class Main {
         System.out.println(cnt);
 //        dow();
 
+        int[][] ma = {};
+        System.out.println(ma == new int[][]);
 
     }
 
