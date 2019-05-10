@@ -7,12 +7,12 @@ import java.util.Scanner;
  */
 
 public class Main {
-    static Scanner in = new Scanner(System.in);
+    private static Scanner in = new Scanner(System.in);
 
 
     public static void main(String[] args) {
-        int price[] = new int[100005];
-        int dp[][] = new int[2][100005];
+        int[] price = new int[100005];
+        int[][] dp = new int[2][100005];
         int T = in.nextInt();
         for (int i=0;i<T;i++){
             int profit = 0;
